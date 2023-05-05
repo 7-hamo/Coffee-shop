@@ -149,6 +149,13 @@ img{
     margin: 0 10.5rem;
 }
 /* menu */
+.menu{
+    height: 1000px;
+    background-image: url(/images/menu__background.webp);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 45%;
+}
 .menu__title{
     font-size: 6rem;
     color: var(--color-primary);
@@ -156,24 +163,33 @@ img{
     margin: 2rem 0;
     text-align: center;
 }
-.menu__ul{
-    background-color: var(--styling-color);
-    color: var(--color-primary);
+.menu__container{
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
-.menu__list{
+.menu--top__background{
+    z-index: -1;
+    background-color: var(--styling-color);
+    height: 70px;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+}
+.menu--section__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: space-around;
+}
+.menu--section__name{
    font-size: 2rem;
    font-weight: 600;
    text-transform: uppercase;
-   padding: 1rem 0rem;
+   color: var(--color-primary);
    
 }
-.menu__orders{
-    display: flex;
-    justify-content: space-evenly;
-}
-.menu__section{
+.menu--section__items{
     display: flex;
     gap: 5rem;
 }
