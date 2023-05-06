@@ -366,3 +366,27 @@ img{
     font-weight: 400;
     font-size: 6rem;
 }
+/* register block */
+.register__container{
+    display: grid;
+    grid-template: 255px 255px /550px 750px;
+    height: 70vh;
+    justify-content: center;
+    align-content: center;
+}
+.register__img{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    justify-self: left;
+}
+.register__title{
+    font-size: 5.3rem;
+    letter-spacing: 5px;
+    color: var(--color-primary);
+    font-weight: 500;
+    margin: 0;
+    align-self: end;
+}
+.register__container .button{
+    margin-top: 3rem;
+}
