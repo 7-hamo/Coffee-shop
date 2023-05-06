@@ -339,3 +339,30 @@ img{
     background-size: cover;
     position: absolute;
 }
+/* tasting day */
+.tasting-day{
+    display: grid;
+    grid-template: 230px 230px /700px 500px;
+    height: 70vh;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    column-gap: 5rem;
+}
+.tasting-day__img{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    justify-self: right;
+}
+.tasting-day__title{
+    font-size: 8rem;
+    letter-spacing: 5px;
+    color: var(--color-primary);
+    font-weight: 500;
+    margin: 0;
+    justify-self: left;
+}
+.tasting-day__date{
+    font-weight: 400;
+    font-size: 6rem;
+}
