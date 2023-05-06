@@ -24,6 +24,7 @@ body{
 }
 p{
     margin: 0;
+    font-size: 3rem;
 }
 a{
     text-decoration: none;
@@ -294,4 +295,47 @@ img{
     position: relative;
     top: 18rem;
     left: 5rem;
+}
+/* take away block */
+.take-away__container{
+    height: 100vh;
+    display: grid;
+    grid-template: 20rem 35rem 20rem/50fr 50fr;
+    align-items: center;
+    justify-items:right;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem 10rem;
+    text-align: right;
+    position: relative;
+}
+.take-away__title{
+    font-size: 8rem;
+    letter-spacing: 5px;
+    color: var(--color-primary);
+    font-weight: 500;
+    margin: 0;
+}
+.take-away__discription{
+    font-size: 6rem;
+    color: var(--color-secondary);
+    font-weight: 500;
+    margin: 0 0 0 20rem;
+}
+.take-away__paragraph{
+    margin: 0 0 0 20rem;
+}
+.take-away__container img{
+    grid-column: 2/3;
+    grid-row: 1/4;
+    justify-self: left;
+}
+.take-away__background{
+    z-index: -1;
+    width: 100vw;
+    height: 35rem;
+    background-image: url(/images/take-away-background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
 }
