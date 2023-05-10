@@ -16,7 +16,7 @@ html{
 body{
     font-family: 'Fira Sans', sans-serif;
     color: var(--body-color);
-    font-size: 1rem;
+    font-size: 1vw;
     background-color: var(--white-color);
 }
 *::-webkit-scrollbar{
@@ -36,17 +36,30 @@ ul{
     padding: 0;
 }
 /* button */
-.button{
-    display: inline;
-    padding: 1vw;
-    height: fit-content;
-    width: fit-content;
+.button__order-now{
+    height: 4vw;
+    width: 13.1vw;
     text-transform: capitalize;
     border: .3vw solid var(--color-primary);
     color: var(--color-primary);
+    text-align: center;
+    position: relative;
+    top: 13vw;
+    left: 3.6vw;
+}
+.button__register{
+    height: 4vw;
+    width: 11vw;
+    text-transform: capitalize;
+    border: .3vw solid var(--color-primary);
+    color: var(--color-primary);
+    margin-top: 2vw;
+    text-align: center;
 }
 .butt__text{
-    margin: 0;
+    display: inline-block;
+    height: 100%;
+    margin-top: .5vw;
     font-size: 2.2vw;
     transition: all .4s;
 }
@@ -64,8 +77,10 @@ img{
     width: 100vw;
     height: 7vw;
     background-color: var(--styling-color);
-    
+    position: relative;
+    z-index: 1;
 }
+
 /* Nav bar */
 .navbar{
     margin-top: 5.5vw;
@@ -81,7 +96,7 @@ img{
     list-style: none;
     margin: 0;
     font-size: 2.7vw;
-    padding:1rem 0rem;
+    padding:1vw 0rem;
     text-transform: capitalize;
     text-align: center;
 }
@@ -112,7 +127,7 @@ img{
 }
 @media screen and (max-width:450px) {
     .navbar{
-        margin-top: .80rem;
+        margin-top: 2vw;
     }
 }
 /* block hero */
@@ -336,11 +351,6 @@ img{
     text-align: center;
     font-weight: 600;
 }
-.buy-block .button{
-    position: relative;
-    top: 13vw;
-    left: 3.6vw;
-}
 /* take away block */
 .take-away__container{
     height: 65vw;
@@ -437,6 +447,52 @@ img{
     margin: 0;
     align-self: end;
 }
-.register__container .button{
-    margin-top: 2vw;
+
+/* links */
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--color-primary);
+    height: 35vw;
+    padding-top: 10vw;
+    position: relative;
+    background: url(/images/links__background.webp);
+    background-size: contain;
+}
+.contact__tile{
+    font-size: 2.6vw;
+    margin-bottom: .7vw;
+    margin-top: 0;
+}
+.contact__text{
+    font-size: 1.7vw;
+    margin-bottom: .7vw;
+}
+.links__title{
+    font-size: 2.6vw;
+    color: var(--color-secondary);
+    text-align: center;
+    
+}
+.contact__links{
+    display: flex;
+    flex-direction: column;
+}
+.links__link{
+    font-size: 1.7vw;
+    margin-bottom: .7vw;
+    font-weight: 300;
+    transition: color .5s;
+}
+.links__link:hover{
+    color: var(--white-color);
+}
+.logo__links{
+position: absolute;
+top: -.1vw;
+left: 47vw;
+border-top: 0;
+width: 12vw;
+height: auto;
 }
