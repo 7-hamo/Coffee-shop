@@ -1,6 +1,0 @@
-container
-nav bar
-image 'base' container
-image 'discount'
-button
-link section
